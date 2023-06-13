@@ -1,0 +1,117 @@
+/* // Style large to small elements. // */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+main {
+    background-color: maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    text-align: center;
+    padding: 7.5%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.barone,
+.bartwo,
+.barthree{
+    margin: 0 auto;
+    height: 10px;
+    width: 145px;    
+}
+
+.barone:hover,
+.bartwo:hover,
+.barthree:hover {
+    background-color: goldenrod
+}
+
+.barone,
+.bartwo,
+.barthree{
+    background-color: maroon;
+}
+
+
+/* Grid area assignments (We need only do once).  */
+main{
+    grid-area: main;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+
+
+
+/* Grid for mobile devices. */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "main"
+    "one"
+    "two"
+    "three";
+}
+
+/* Grid and Laptop media query here */
+@media (mi-width: 576px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "main  main"
+        "one   two"
+        "three ."
+        ;
+    }
+    h1 {
+        font-size: 50px;    
+    }
+.one, .two, .three {
+    background-color: maroon;
+}
+}
+
+/* Grid and Desktop media query here */
+@media (min-width: 992px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "main main main"
+        "one two three"
+        ;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    .one, .two, .three {
+        background-color: black;
+    }
+}

@@ -1,0 +1,266 @@
+body  {
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: beige;  
+}
+  
+header  {
+    margin: auto;
+    grid-template-columns: 10% 10%;
+    height: 115px;
+    background-color: maroon ;  
+}
+  
+.head-nav  {
+  display: grid;
+  grid-template-columns:10 px;
+  margin:auto;
+  height: auto;
+  align-items: center;
+  font-family: 'Sans', serif;
+}
+
+.image-box  {
+  height: 80px;
+}
+
+.aca-logo  {
+  height: 140px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.navigation a  {
+  border: 1pt black solid;
+  border-radius: 15%;
+  background-color:  darkkhaki;
+  padding: 4pt;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+  
+section  {
+  text-align: center;
+  margin: auto;
+}
+  
+nav>section  {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+  
+  
+ h1  {
+  font-size: 110px;
+  border-bottom: lightgray solid 3pt;
+  margin: auto 100pt;
+  color: maroon;
+  font-family: 'Oswald', sans-serif;
+}
+  
+h2  {
+  font-size: 40px;
+  color: maroon ;
+  padding-bottom: 40px;
+  font-family: 'Merriweather', serif;
+  font-style:italic;
+  font-weight: bold;
+}
+  
+  
+main  {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+  
+label  {
+  display: block;
+  width: 100%;
+}
+  
+select  {
+  width: 100pt;
+}
+  
+input  {
+  width: 100pt;
+  text-align: center;
+}
+  
+.radio  {
+  display: flex;
+  width: 100pt;    
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+textarea  {
+  width: 200pt;
+  height: 40pt;
+}
+  
+form>div  {
+  padding-bottom: 20pt;
+}
+  
+form  {
+  border: 2pt solid black;
+  border-radius: 12%;
+  padding-top: 40pt;
+  padding-bottom: 5pt;
+  width: 400pt;
+  background: linear-gradient(180deg, #817587 0%, hsl(58, 96%, 47%) 100%);
+  font-family: 'Merriweather', serif;
+  font-size: 10pt;
+}
+  
+.content label {
+  font-size: 24px;
+}
+ 
+.contact-back  {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+  
+button  {
+  font-size: 24px;
+}
+  
+.icons-contact  {    
+  margin:20pt auto auto auto;
+  width: 200pt;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+  
+.icons-contact a {
+  text-decoration: none;
+  color: black;
+}
+ 
+
+
+footer  {
+  background-color: maroon ;
+  margin: auto;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+
+.foot-nav  {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+.foot-nav a  {
+  border: 1pt black solid;
+  border-radius: 10%;
+  background-color:  maroon;
+  padding: 2pt;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+ 
+  
+h3  {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 100;
+  font-style:italic;
+  margin-bottom: 0;
+}
+
+
+.follow-me  {
+  color: black;
+  margin-top: 0;
+}
+
+.icons  {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow-me  {
+  text-decoration: none;
+  color: black;
+}
+  
+  
+@media (max-width: 840px)  {
+   
+header  {
+  margin: auto;
+  height: auto;
+  background-color: goldenrod ;
+}
+    
+.head-nav  {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50%;
+  margin: auto;    
+  height: auto;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+}
+    
+.head-nav a  {
+  font-size: 16px;
+}
+    
+main  {
+  width: auto;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+    
+section.title  {
+  width: 375px;
+  margin: auto;
+}
+    
+h1  {
+  width: 375px;
+  font-size: 40pt;
+  margin: 0 auto;
+}
+    
+form  {
+  width: 360px;
+}
+    
+textarea  {
+  width: 150pt;
+}
+
+}

@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://tattoocovenant.com/wp-content/uploads/2019/08/36801346-free-background-images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* What kind of selector is this? */
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 3% 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 10% 10%;
+    width: 50%;
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  /* This is an element within an element selector */ 
+  
+  nav {
+    display: flex;        
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+
+  nav > a {
+    margin: 3% auto;    
+    height:50%;
+    font-family: Garamond;
+    font-size: 40px;
+    border-radius: 75px;
+    background: transparent;  
+    text-align: center;
+    color: maroon;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
+
+  .has-border {
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-family: Garamond;
+    font-size: 40px;
+    border-radius: 73px;
+    border-top: 1.5px solid beige;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 5px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    text-align: center;
+    color: maroon;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
+
+  /* This is an ID selector */
+  #profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+  }
+
+  h1 {
+    color:rgb(231, 179, 34);
+    font-family: Arial;
+    font-size: 5px;
+    grid-column: 2/3;
+    margin: 3% auto;
+    border-bottom: 2px solid #50504f;;
+  }
+
+  h2 {
+    grid-column: 2/3;
+    margin: 3% auto;
+    color: darkslategray;
+    font-style: italic;
+  }
+
+  .small-text {
+    grid-column: 2/3;
+    color: white;
+    font-size: 14px;
+    margin: 3% auto;
+  }
+
+  button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 65%;
+    height:70%;
+    font-family: Garamond;
+    font-size: 40px;
+    border-radius: 75px;
+    background: transparent;
+    padding: 5px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: center;
+    color: maroon;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
+
+  /* Grid for mobile devices. */
+.body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas:
+  "main"
+  "one"
+  "two"
+  "three";
+}
+/* Grid and Laptop media query here */
+@media (mi-width: 576px) {
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+      "main  main"
+      "one   two"
+      "three ."
+      ;
+  }
+  h1 {
+      font-size: 50px;    
+  }
+.one, .two, .three {
+  background-color: maroon;
+}
+}
+
+/* Grid and Desktop media query here */
+@media (min-width: 992px) {
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "main main main"
+      "one two three"
+      ;
+  }
+
+  h1{
+      font-size: 60px;
+  }
+  .one, .two, .three {
+      background-color: black;
+  }
+}

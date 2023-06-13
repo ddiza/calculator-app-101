@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <nav class="head-nav">
+      <section class="navigation">
+        <a href="index.html">home</a>
+        <a href="about.html">about me</a>        
+        <a href="Resume.html">resume</a>
+        <a href="portfolio.html">portfolio</a>
+      </section>
+    </nav>  
+  </header>
+
+
+  <main>
+    <section class="title" >
+      <h1>contact me</h1>
+      <h2>Let's keep in touch!</h2>
+    </section>
+    <section class="content">
+      <form action="results.html" method="GET">
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" name="First-Last" id="First-Last" placeholder="First-Last" required>
+        </div>
+        <div>  
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required placeholder="email">
+        </div>
+        <div>
+          <label for="referral">How did you find me?</label>
+          <select>
+            <option value="How did you find me?" disabled selected></option>
+            <option label="Resume" value="Resume">Resume</option>
+            <option label="Email" value="Email">Email</option>
+            <option label="Common Friend" value="Common Friend">Common Friend</option>
+            <option label="Referral" value="Referal">Referral</option>
+            <option label="LinkedIn" value="LinkedIn">LinkedIn</option> 
+            <option label="Other" value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <div class="contact-back">
+            Would you like for me to contact you?  
+          </div>
+          <div class="radio">
+            <label for="yes">yes</label>
+            <input type="radio" name="yes">
+            <label for="no">no</label>
+            <input type="radio" name="no">
+          </div>
+        </div>
+        <div>
+          <label for="Question or Comments">Questions or Comments?</label>
+          <textarea id="questions or comments" name="questions or comments" min="5" max="500"></textarea>
+        </div>
+        
+        <button type="reset"> reset</button>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="follow-me">
+          <h3>follow me</h3>      
+          <div class="icons"> 
+            <a href="https://www.facebook.com/dsdpdiza/"><i class="icon-1 fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/dantediza//"><i class="icon-2 fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/DuqueDaz"><i class="icon-3 fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <a class="https://www.linkedin.com/in/dante-diza" aria-hidden="true"></a>
+          </div>
+      </div>
+    </div>
+    
+  </footer>
+  
+</body>
+</html>
